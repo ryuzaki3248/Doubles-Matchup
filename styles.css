@@ -44,3 +44,41 @@ a {
 a:hover {
   color: #1e3c72;
 }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+}
+
+.grid-item a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #3f51b5;
+  transition: background-color 0.3s ease;
+}
+
+.grid-item a:hover {
+  background-color: #f1f1f1;
+}
+
+.top-link {
+  margin-top: 20px;
+}
+
+.top-link a {
+  text-decoration: none;
+  color: #3f51b5;
+  font-size: 16px;
+}
