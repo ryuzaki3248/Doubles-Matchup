@@ -109,6 +109,10 @@ input[type="radio"] {
   margin-right: 10px;
 }
 
+tr:nth-of-type(odd) td {
+  background-color: #ffffcc;
+}
+
 .return-link {
   text-align: center;
   padding: 10px 0;
