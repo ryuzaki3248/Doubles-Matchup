@@ -3,140 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2コート 8人</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>テーブル例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: red;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            background-color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-of-type(odd) td {
+            background-color: #ffffcc;
+        }
+
+        tr:nth-of-type(even) td {
+            background-color: #fff;
+        }
+
+        .radio-cell {
+            text-align: left;
+            background-color: #ffffcc;
+        }
+
+        .footer-links {
+            text-align: left;
+            padding-top: 10px;
+        }
+
+        .footer-links a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        .nested-table {
+            border: none;
+            width: 100%;
+        }
+
+        .nested-table td {
+            border: none;
+            padding: 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .line-separator {
+            border-bottom: 1px solid #000;
+            display: block;
+            margin: 8px 0; /* Adjusted for better spacing */
+            width: 100%;
+        }
+
+        .header-row th {
+            background-color: #f2f2f2 !important; /* 薄いグレー */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>2コート 8人</h1>
+        <h1>1コート 8人</h1>
         <table>
-            <tr>
-                <td><input type="radio" name="match" value="1">1</td>
-                <td>1,2</td>
-                <td>vs</td>
-                <td>3,4</td>
+            <tr class="header-row">
+                <th>試合番号</th>
+                <th>チーム1</th>
+                <th></th>
+                <th>チーム2</th>
             </tr>
             <tr>
-                <td><input type="radio" name="match" value="2">2</td>
-                <td>5,6</td>
-                <td>vs</td>
-                <td>7,8</td>
+                <td><input type="radio" name="match" value="1"> 1</td>
+                <td>1,2<span class="line-separator"></span>3,4</td>
+                <td>VS<span class="line-separator"></span>VS</td>
+                <td>5,6<span class="line-separator"></span>7,8</td>
             </tr>
             <tr>
-                <td><input type="radio" name="match" value="3">3</td>
-                <td>1,3</td>
-                <td>vs</td>
-                <td>5,7</td>
+                <td><input type="radio" name="match" value="2"> 2</td>
+                <td>1,3<span class="line-separator"></span>2,4</td>
+                <td>VS<span class="line-separator"></span>VS</td>
+                <td>5,7<span class="line-separator"></span>6,8</td>
             </tr>
             <tr>
-                <td><input type="radio" name="match" value="4">4</td>
-                <td>2,4</td>
-                <td>vs</td>
-                <td>6,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="5">5</td>
-                <td>1,4</td>
-                <td>vs</td>
-                <td>5,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="6">6</td>
-                <td>2,3</td>
-                <td>vs</td>
-                <td>6,7</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="7">7</td>
-                <td>1,5</td>
-                <td>vs</td>
-                <td>2,6</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="8">8</td>
-                <td>1,7</td>
-                <td>vs</td>
-                <td>2,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="9">9</td>
-                <td>3,5</td>
-                <td>vs</td>
-                <td>4,6</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="10">10</td>
-                <td>3,7</td>
-                <td>vs</td>
-                <td>4,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="11">11</td>
-                <td>1,6</td>
-                <td>vs</td>
-                <td>4,7</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="12">12</td>
-                <td>2,5</td>
-                <td>vs</td>
-                <td>3,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="13">13</td>
-                <td>1,8</td>
-                <td>vs</td>
-                <td>4,5</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="14">14</td>
-                <td>2,7</td>
-                <td>vs</td>
-                <td>3,6</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="15">15</td>
-                <td>1,3</td>
-                <td>vs</td>
-                <td>5,7</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="16">16</td>
-                <td>2,4</td>
-                <td>vs</td>
-                <td>6,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="17">17</td>
-                <td>1,4</td>
-                <td>vs</td>
-                <td>5,8</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="18">18</td>
-                <td>2,3</td>
-                <td>vs</td>
-                <td>6,7</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="19">19</td>
-                <td>1,5</td>
-                <td>vs</td>
-                <td>2,6</td>
-            </tr>
-            <tr>
-                <td><input type="radio" name="match" value="20">20</td>
-                <td>5,8</td>
-                <td>vs</td>
-                <td>6,7</td>
+                <td><input type="radio" name="match" value="3"> 3</td>
+                <td>1,4<span class="line-separator"></span>2,3</td>
+                <td>VS<span class="line-separator"></span>VS</td>
+                <td>5,8<span class="line-separator"></span>6,7</td>
             </tr>
         </table>
-        <div class="return-link">
-            <a href="index.html">人数選択へ戻る</a>
-        </div>
-        <div class="top-link">
-            <a href="index.html">TOPへ</a>
-        </div>
     </div>
 </body>
 </html>
