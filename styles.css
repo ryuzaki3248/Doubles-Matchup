@@ -9,7 +9,7 @@ body {
 .container {
   padding: 20px;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 600px;  /* コンテナ幅を調整 */
 }
 
 h1 {
@@ -89,8 +89,7 @@ table {
   margin: 20px 0;
 }
 
-th,
-td {
+th, td {
   border: 1px solid #ddd;
   padding: 8px;
 }
@@ -110,7 +109,7 @@ input[type="radio"] {
 }
 
 tr:nth-of-type(odd) td {
-  background-color: #ffffcc;
+  background-color: #FFFFCC;
 }
 
 .return-link {
@@ -124,6 +123,30 @@ tr:nth-of-type(odd) td {
   font-size: 14px;
 }
 
-.return-link a:hover {
-  color: #1e3c72;
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  a {
+      font-size: 14px;
+  }
+
+  .grid-item a {
+      padding: 8px;
+  }
+
+  th, td {
+      padding: 6px;
+  }
 }
