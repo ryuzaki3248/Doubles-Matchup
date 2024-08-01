@@ -114,3 +114,24 @@ tr:nth-of-type(even) td {
     padding: 6px;
   }
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("IMG_4712.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* 背景を半透明にして読みやすくする */
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
